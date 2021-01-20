@@ -6,7 +6,7 @@ from instaloader import Instaloader, Profile
 import time
 
 L = Instaloader()
-TOKEN = "<Your telegram Token>"
+TOKEN = "Your bot token"
 
 welcome_msg = '''<b>Welcome To the Bot</b>🖐🖐
  <i>Send me anyones instagram username to get their DP</i>
@@ -62,7 +62,7 @@ def error(update, context):
 def main():
     # Create the Updater and pass it your bot's token.
     updater = Updater(TOKEN, use_context=True)
-    PORT = int(os.environ.get('PORT', '8443'))
+    #PORT = int(os.environ.get('PORT', '8443'))
     dp = updater.dispatcher
     dp.add_handler(CommandHandler("start", start))
     dp.add_handler(CommandHandler("help", help_msg))
@@ -71,9 +71,10 @@ def main():
     # log all errors
     dp.add_error_handler(error)
     # Start the Bot
-    updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
-    updater.bot.set_webhook(
-        "https://<your app name>.herokuapp.com/" + TOKEN)
+    updater.start_polling()
+    #updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
+    #updater.bot.set_webhook(
+     #   "https://<your app name>.herokuapp.com/" + TOKEN)
     # Run the bot until the user presses Ctrl-C or the process receives SIGINT,
     # SIGTERM or  SIGABRT
     updater.idle()
