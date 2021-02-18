@@ -10,7 +10,7 @@ TOKEN = "1516339731:AAG_G3Rt4a6jC8UhgnnvPDXvlW-Xc5zXMNs"
 
 welcome_msg = '''<b>Welcome To the Bot</b>🖐🖐
  <i>Send me anyones instagram username to get their DP</i>
- ex : <b>virat.kohli</b> , <b>thenameisyash</b> etc'''
+ ex : <b>ninja8bpyt</b> , <b>thenameisyash</b> etc'''
 
 logging.basicConfig(
     format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO
@@ -30,7 +30,7 @@ def help_msg(update, context):
 
 def contact(update, context):
     keyboard = [[InlineKeyboardButton(
-        "Contact", url="telegram.me/phantom2152")], ]
+        "Contact", url="telegram.me/ninja8bpyt")], ]
 
     reply_markup = InlineKeyboardMarkup(keyboard)
 
