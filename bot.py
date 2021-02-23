@@ -74,7 +74,7 @@ def main():
     updater.start_polling()
     #updater.start_webhook(listen="0.0.0.0", port=PORT, url_path=TOKEN)
     #updater.bot.set_webhook(
-     #   "https://<your app name>.herokuapp.com/" + TOKEN)
+     #   "https://igdb-bot.herokuapp.com/" + TOKEN)
     # Run the bot until the user presses Ctrl-C or the process receives SIGINT,
     # SIGTERM or  SIGABRT
     updater.idle()
