@@ -6,7 +6,7 @@ from instaloader import Instaloader, Profile
 import time
 
 L = Instaloader()
-TOKEN = "5043405586:AAGtTVkmbprqQHo4hX7Cf5Q3MJ8qHOSUyxI"
+TOKEN = "7024280142:AAE6mIYG0B_n5RMRCip1G0M9aMvTdht98Wg"
 
 welcome_msg = '''<b>Welcome To the Bot</b>🖐🖐
  <i>Send me anyones instagram username to get their DP</i>
